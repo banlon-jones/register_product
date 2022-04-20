@@ -1,0 +1,19 @@
+.card {
+  margin-top: 5%;
+  left: 10%;
+  width: 80%;
+  background-color: rgba(234, 234, 234, 0.95);
+  padding: 2%;
+}
+
+.flex {
+  flex: 0 1 35%;
+}
+
+.name {
+  width: 50%;
+}
+
+.brand {
+  width: 50%;
+}

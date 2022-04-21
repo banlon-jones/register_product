@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {FormInfoComponent} from './pages/form-info/form-info.component';
-import {ListInfoComponent} from './pages/list-info/list-info.component';
+import {CreateProductComponent} from './pages/form-info/create-product.component';
+import {LandingPageComponent} from './pages/list-info/landing-page.component';
 
 const routes: Routes = [
   {
-    path: '', component: FormInfoComponent,
+    path: '', component: CreateProductComponent,
   },
   {
-    path: 'list-info', component: ListInfoComponent,
+    path: 'list-info', component: LandingPageComponent,
+  },
+  {
+    path: 'form-info', component: CreateProductComponent,
   },
   {
     path: '',

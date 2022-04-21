@@ -3,18 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormInfoComponent } from './pages/form-info/form-info.component';
-import { ListInfoComponent } from './pages/list-info/list-info.component';
+import { CreateProductComponent } from './pages/form-info/create-product.component';
+import { LandingPageComponent } from './pages/list-info/landing-page.component';
+import {HttpClientModule} from '@angular/common/http';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormInfoComponent,
-    ListInfoComponent
+    CreateProductComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

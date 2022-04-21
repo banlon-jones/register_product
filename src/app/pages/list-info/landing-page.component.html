@@ -1,0 +1,40 @@
+<div class="body">
+  <div class="card" *ngIf="!isProduct">
+    <p style="font-size: 4.5rem; font-weight: lighter">product Register</p>
+    <i style="font-size: 1.5rem; font-weight: lighter">This is a simple product register app</i>
+    <div class="card-body"></div>
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">product Name</th>
+        <th scope="col">Reg number</th>
+        <th scope="col">brand</th>
+        <th scope="col">Details</th>
+        <th scope="col">
+          <a routerLink="/form-info">
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fas fa-plus"></i>&nbsp;
+              Add New
+            </button>
+          </a>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.productname }}</td>
+        <td>{{ product.productnumber }}</td>
+        <td>{{ product.productbrand }}</td>
+        <td>{{ product.details }}</td>
+        <i class="fa-solid fa-pen-to-square"></i>&nbsp;
+        <i class="fas fa-trash-alt" (click)="deleteProduct()" style="color: red"></i>
+      </tr>
+      </tbody>
+    </table>
+    <ul></ul>
+  </div>
+
+<!--  <div *ngIf="!isProduct">-->
+<!--    <app-form-info [product]="product"></app-form-info>-->
+<!--  </div>-->
+</div>

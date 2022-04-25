@@ -5,7 +5,7 @@ import {Subscription} from 'rxjs';
 import {ProductResponseDto} from '../model/ProductResponseDto';
 
 @Component({
-  selector: 'app-list-info',
+  selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css']
 })

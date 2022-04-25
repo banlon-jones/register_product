@@ -7,7 +7,7 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 import {ProductRequestDto} from '../model/ProductRequestDto';
 
 @Component({
-  selector: 'app-form-info',
+  selector: 'app-create-product',
   templateUrl: './create-product.component.html',
   styleUrls: ['./create-product.component.css']
 })
